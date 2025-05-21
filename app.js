@@ -7,7 +7,21 @@
 // console.log(classic);
 // console.log(age);
 // video-2
-const narx = 15000;
-const chegirma = 5000;
-const ayrilganchegirma = narx - chegirma;
-console.log(ayrilganchegirma);
+// const narx: number = 15000
+// const chegirma: number = 5000
+// const ayrilganchegirma: Number = narx - chegirma
+// console.log(ayrilganchegirma)
+// video -3
+function Azizbek(name, lastname) {
+    return `${name} ${lastname}`;
+}
+const chekad = (age) => {
+    if (age >= 18) {
+        return true;
+    }
+    return false;
+};
+const odam = Azizbek("azizbek", "akramov");
+console.log(odam);
+const add = chekad(17);
+console.log(add);
