@@ -73,9 +73,34 @@
 
 // union types
 
-let car: String[] = ['Cobalt','Trakkar','Nexia 2']
-let number: number[] = [1,2,3,4,5]
-let bool:boolean[] =[true,false,true,false]
+// let car: String[] = ['Cobalt','Trakkar','Nexia 2']
+// let number: number[] = [1,2,3,4,5]
+// let bool:boolean[] =[true,false,true,false]
 
-let mixs:(number | string | boolean)[] = [1,'hello',2,'world',true,false]
-console.log(mixs);
+// let mixs:(number | string | boolean)[] = [1,'hello',2,'world',true,false]
+// console.log(mixs);
+
+// video-6
+
+// const people: [string,number] =['azizbek',24]
+// console.log(people[0]);
+// console.log(people[1]);
+// console.log(people[2]);     // xato
+
+
+// union type
+// let joylashuv: [number, string | number] = [98,'sdcefer']
+// console.log("1",joylashuv);
+
+// joylashuv = [12,55]
+// console.log(joylashuv);
+
+
+function get():[string, number] {
+	return ['azizbek',15]
+}
+
+const log = get()
+
+const [fullName, age] = log
+console.log(fullName,age);
