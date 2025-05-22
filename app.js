@@ -12,16 +12,31 @@
 // const ayrilganchegirma: Number = narx - chegirma
 // console.log(ayrilganchegirma)
 // video -3
-function Azizbek(name, lastname) {
-    return `${name} ${lastname}`;
-}
-const chekad = (age) => {
-    if (age >= 18) {
-        return true;
+// function Azizbek(name:string,lastname:string):string {
+// 	return`${name} ${lastname}`
+// }
+// const chekad =(age:number):boolean =>{
+// 	if (age >= 18) {
+// 		return true
+// 	}
+// 	return false
+// }
+// const odam =Azizbek("azizbek","akramov")
+// console.log(odam);
+// const add = chekad(20)
+// console.log(add);
+// video-4
+const people = {
+    firstName: 'Azizbek',
+    lastName: 'Akramov',
+    city: 'Jizzax',
+    science: {
+        history: 'yomon',
+        mathematics: 'yaxshi'
     }
-    return false;
 };
-const odam = Azizbek("azizbek", "akramov");
-console.log(odam);
-const add = chekad(17);
-console.log(add);
+function azizbek(data) {
+    return `${data.firstName} ${data.lastname}`;
+}
+const people1 = azizbek({ firstName: people.firstName, lastname: people.lastName });
+console.log(people1);

@@ -19,24 +19,46 @@
 
 // video -3
 
-function Azizbek(name:string,lastname:string):string {
-	return`${name} ${lastname}`
+// function Azizbek(name:string,lastname:string):string {
+// 	return`${name} ${lastname}`
 	
-}
+// }
 
 
-const chekad =(age:number):boolean =>{
-	if (age >= 18) {
-		return true
+// const chekad =(age:number):boolean =>{
+// 	if (age >= 18) {
+// 		return true
+// 	}
+
+// 	return false
+// }
+
+// const odam =Azizbek("azizbek","akramov")
+
+// console.log(odam);
+
+// const add = chekad(20)
+// console.log(add);
+
+
+// video-4
+
+const people = {
+	firstName:'Azizbek',
+	lastName:'Akramov',
+	city:'Jizzax',
+	science: {
+		history:'yomon',
+		mathematics:'yaxshi'
 	}
-
-	return false
 }
 
-const odam =Azizbek("azizbek","akramov")
+function azizbek(data:{firstName:string, lastname:string}):string {
+	return`${data.firstName} ${data.lastname}`
+}
 
-console.log(odam);
+const people1 = azizbek({firstName: people.firstName,lastname:people.lastName})
+console.log(people1);
 
-const add = chekad(20)
-console.log(add);
+
 
