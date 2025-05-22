@@ -184,7 +184,36 @@
 // }
 // console.log(az(10,15));
 // console.log(az('azizbek',55)); // xato  chunki ab-string emas  
-function az(fullName) {
-    return `Hello ${fullName}`;
-}
-console.log(az('Azizbek Akramovich'));
+// function az(fullName:string):string {
+// 	return `Hello ${fullName}`
+// }
+// console.log(az('Azizbek Akramovich'));
+// function az(fullName:string):void {
+// 	console.log(`Hello ${fullName}`);
+// }
+// console.log(az('Azizbek Akramovich'));
+// interface
+// interface Person{
+// 	firstName:string;
+// 	age:number;
+// 	kasb:string;
+// }
+// let people:Person ={
+// 	firstName:'azizbek',
+// 	age:15,
+// 	kasb:"IT"
+// }
+// video-6     mohirdev
+// class People {
+//   firstname: string;
+//   age: number;
+//   constructor(firstname: string, age: number) {
+//     this.firstname = firstname;
+//     this.age = age;
+//   }
+//   get() {
+//     return `Hello, ${this.firstname}!`;
+//   }
+// }
+// const person = new People('azizbek', 15);
+// console.log(person.get());

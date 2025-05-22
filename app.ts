@@ -285,3 +285,25 @@
 // 	age:15,
 // 	kasb:"IT"
 // }
+
+
+
+// video-6     mohirdev
+
+
+// class People {
+//   firstname: string;
+//   age: number;
+
+//   constructor(firstname: string, age: number) {
+//     this.firstname = firstname;
+//     this.age = age;
+//   }
+
+//   get() {
+//     return `Hello, ${this.firstname}!`;
+//   }
+// }
+
+// const person = new People('azizbek', 15);
+// console.log(person.get());
