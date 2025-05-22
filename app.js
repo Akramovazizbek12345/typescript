@@ -178,3 +178,13 @@
 // let anotherdigital: Array<number> = [1,2,3];
 // let people: { fullName:string, yosh:number} = {fullName:'Akramov Azizbek', yosh: 15}
 // console.log(people.yosh);
+// video-5     mohirdev
+// function az(ab:number, cd:number) {
+// 	return ab + cd;
+// }
+// console.log(az(10,15));
+// console.log(az('azizbek',55)); // xato  chunki ab-string emas  
+function az(fullName) {
+    return `Hello ${fullName}`;
+}
+console.log(az('Azizbek Akramovich'));

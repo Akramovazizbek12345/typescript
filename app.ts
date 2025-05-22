@@ -247,3 +247,41 @@
 // console.log(people.yosh);
 
 
+// video-5     mohirdev
+
+// function az(ab:number, cd:number) {
+// 	return ab + cd;
+// }
+
+// console.log(az(10,15));
+// console.log(az('azizbek',55)); // xato  chunki ab-string emas  
+
+
+
+// function az(fullName:string):string {
+// 	return `Hello ${fullName}`
+// }
+
+// console.log(az('Azizbek Akramovich'));
+
+
+// function az(fullName:string):void {
+// 	console.log(`Hello ${fullName}`);
+// }
+
+// console.log(az('Azizbek Akramovich'));
+
+
+// interface
+
+// interface Person{
+// 	firstName:string;
+// 	age:number;
+// 	kasb:string;
+// }
+
+// let people:Person ={
+// 	firstName:'azizbek',
+// 	age:15,
+// 	kasb:"IT"
+// }
