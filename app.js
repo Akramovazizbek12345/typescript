@@ -76,3 +76,52 @@
 // people[0] = 'islom'  // xato yuzaga keladi readonly ishlatganimiz uchun readonly qo'sholmimiz
 // const [fullName,age ] = people
 // console.log(fullName,age);
+// video-8
+// enum Direction {
+// 	Up = 1,
+// 	Down = 2,
+// 	Left = 3,
+// 	Right= 4,
+// }
+// enum Direction {
+// 	Up = 'Up',
+// 	Down = 'Down',
+// 	Left = 'Left',
+// 	Right = 'Right',
+// }
+// function get(direction:Direction) {
+// 	if (direction === Direction.Up) {
+// 		return 'Moving Up'
+// 	}else if (direction === Direction.Down) {
+// 		return 'moving Down'
+// 	}else if (direction === Direction.Left) {
+// 		return 'moving Left'
+// 	}else if (direction === Direction.Right) {
+// 		return 'moving Right'
+// 	}
+// }
+// const moving = get(Direction.Up)
+// console.log(moving);
+// const dovn = get(Direction.Down)
+// console.log(dovn);
+var StatusPeople;
+(function (StatusPeople) {
+    StatusPeople[StatusPeople["kam"] = 123] = "kam";
+    StatusPeople[StatusPeople["ortacha"] = 250] = "ortacha";
+    StatusPeople[StatusPeople["kop"] = 500] = "kop";
+})(StatusPeople || (StatusPeople = {}));
+function get(people) {
+    if (people === StatusPeople.kam) {
+        console.log("yaxshi holat");
+        return StatusPeople.kam;
+    }
+    if (people === StatusPeople.kop) {
+        console.log("server qotishi mumkin");
+        return StatusPeople.kop;
+    }
+    return StatusPeople.ortacha;
+}
+const page = get(100);
+if (page === StatusPeople.ortacha) {
+    console.log("qotishi mumkin");
+}
