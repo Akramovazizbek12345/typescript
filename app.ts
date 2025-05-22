@@ -185,3 +185,50 @@
 	
 // }
 
+// video-9
+
+let person: {
+  id: number
+  name: string
+  username: string
+  email: string
+  address: {
+    street: string
+    suite: string
+    city: string
+    zipcode: string
+    geo: {
+      lat: number
+      lng: number
+    }
+  }
+  phone: number
+  website: string
+  company: {
+    name: string
+    catchPhrase: string
+    bs: string
+  }
+} = {
+  id: 1,
+  name: "Leanne Graham",
+  username: "Bret",
+  email: "Sincere@april.biz",
+  address: {
+    street: "Kulas Light",
+    suite: "Apt. 556",
+    city: "Gwenborough",
+    zipcode: "92998-3874",
+    geo: {
+      lat: -37.3159,
+      lng: 81.1496
+    }
+  },
+  phone: 17707368031,
+  website: "hildegard.org",
+  company: {
+    name: "Romaguera-Crona",
+    catchPhrase: "Multi-layered client-server neural-net",
+    bs: "harness real-time e-markets"
+  }
+}

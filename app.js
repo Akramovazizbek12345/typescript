@@ -104,24 +104,47 @@
 // console.log(moving);
 // const dovn = get(Direction.Down)
 // console.log(dovn);
-var StatusPeople;
-(function (StatusPeople) {
-    StatusPeople[StatusPeople["kam"] = 123] = "kam";
-    StatusPeople[StatusPeople["ortacha"] = 250] = "ortacha";
-    StatusPeople[StatusPeople["kop"] = 500] = "kop";
-})(StatusPeople || (StatusPeople = {}));
-function get(people) {
-    if (people === StatusPeople.kam) {
-        console.log("yaxshi holat");
-        return StatusPeople.kam;
+// enum StatusPeople{
+// 	kam = 123,
+// 	ortacha = 250,
+// 	kop = 500,
+// }
+// function get(people : number) {
+// 	if (people === StatusPeople.kam) {
+// 		console.log("yaxshi holat");
+// 		return StatusPeople.kam
+// 	}
+// 	 if (people === StatusPeople.kop) {
+// 		console.log("server qotishi mumkin");
+// 		return StatusPeople.kop
+// 	}
+// 	return StatusPeople.ortacha
+// }
+// const page = get(100)
+// if (page === StatusPeople.ortacha) {
+// 	console.log("qotishi mumkin");
+// }
+// video-9
+let person = {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    address: {
+        street: "Kulas Light",
+        suite: "Apt. 556",
+        city: "Gwenborough",
+        zipcode: "92998-3874",
+        geo: {
+            lat: -37.3159,
+            lng: 81.1496
+        }
+    },
+    phone: 17707368031,
+    website: "hildegard.org",
+    company: {
+        name: "Romaguera-Crona",
+        catchPhrase: "Multi-layered client-server neural-net",
+        bs: "harness real-time e-markets"
     }
-    if (people === StatusPeople.kop) {
-        console.log("server qotishi mumkin");
-        return StatusPeople.kop;
-    }
-    return StatusPeople.ortacha;
-}
-const page = get(100);
-if (page === StatusPeople.ortacha) {
-    console.log("qotishi mumkin");
-}
+};
