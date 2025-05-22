@@ -43,22 +43,39 @@
 
 // video-4
 
-const people = {
-	firstName:'Azizbek',
-	lastName:'Akramov',
-	city:'Jizzax',
-	science: {
-		history:'yomon',
-		mathematics:'yaxshi'
-	}
-}
+// const people = {
+// 	firstName:'Azizbek',
+// 	lastName:'Akramov',
+// 	city:'Jizzax',
+// 	science: {
+// 		history:'yomon',
+// 		mathematics:'yaxshi'
+// 	}
+// }
 
-function azizbek(data:{firstName:string, lastname:string}):string {
-	return`${data.firstName} ${data.lastname}`
-}
+// function azizbek(data:{firstName:string, lastname:string}):string {
+// 	return`${data.firstName} ${data.lastname}`
+// }
 
-const people1 = azizbek({firstName: people.firstName,lastname:people.lastName})
-console.log(people1);
+// const people1 = azizbek({firstName: people.firstName,lastname:people.lastName})
+// console.log(people1);
 
 
+// video-5
 
+// let car: String[] = ['Cobalt','Trakkar','Nexia 2']
+// let number: number[] = [1,2,3,4,5,5]
+// let bool:boolean[] =[true,false,true,false]
+
+// let result =number.map(num => `Number: ${num}`)
+
+// console.log(result);
+
+// union types
+
+let car: String[] = ['Cobalt','Trakkar','Nexia 2']
+let number: number[] = [1,2,3,4,5]
+let bool:boolean[] =[true,false,true,false]
+
+let mixs:(number | string | boolean)[] = [1,'hello',2,'world',true,false]
+console.log(mixs);
