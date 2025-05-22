@@ -62,9 +62,17 @@
 // console.log("1",joylashuv);
 // joylashuv = [12,55]
 // console.log(joylashuv);
-function get() {
-    return ['azizbek', 15];
-}
-const log = get();
-const [fullName, age] = log;
-console.log(fullName, age);
+// function get():[string, number] {
+// 	return ['azizbek',15]
+// }
+// const log = get()
+// const [fullName, age] = log
+// console.log(fullName,age);
+// video-7
+// let severid: readonly number[] = [1,2,3,4,5]
+// severid.push(6)    // xato yuzaga keladi readonly ishlatganimiz uchun readonly qo'sholmimiz
+// console.log(severid);
+// let people: readonly [string,number] = ['azizbek',15]
+// people[0] = 'islom'  // xato yuzaga keladi readonly ishlatganimiz uchun readonly qo'sholmimiz
+// const [fullName,age ] = people
+// console.log(fullName,age);
