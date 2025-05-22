@@ -187,48 +187,63 @@
 
 // video-9
 
-let person: {
-  id: number
-  name: string
-  username: string
-  email: string
-  address: {
-    street: string
-    suite: string
-    city: string
-    zipcode: string
-    geo: {
-      lat: number
-      lng: number
-    }
-  }
-  phone: number
-  website: string
-  company: {
-    name: string
-    catchPhrase: string
-    bs: string
-  }
-} = {
-  id: 1,
-  name: "Leanne Graham",
-  username: "Bret",
-  email: "Sincere@april.biz",
-  address: {
-    street: "Kulas Light",
-    suite: "Apt. 556",
-    city: "Gwenborough",
-    zipcode: "92998-3874",
-    geo: {
-      lat: -37.3159,
-      lng: 81.1496
-    }
-  },
-  phone: 17707368031,
-  website: "hildegard.org",
-  company: {
-    name: "Romaguera-Crona",
-    catchPhrase: "Multi-layered client-server neural-net",
-    bs: "harness real-time e-markets"
-  }
-}
+// let person: {
+//   id: number
+//   name: string
+//   username: string
+//   email: string
+//   address: {
+//     street: string
+//     suite: string
+//     city: string
+//     zipcode: string
+//     geo: {
+//       lat: number
+//       lng: number
+//     }
+//   }
+//   phone: number
+//   website: string
+//   company: {
+//     name: string
+//     catchPhrase: string
+//     bs: string
+//   }
+// } = {
+//   id: 1,
+//   name: "Leanne Graham",
+//   username: "Bret",
+//   email: "Sincere@april.biz",
+//   address: {
+//     street: "Kulas Light",
+//     suite: "Apt. 556",
+//     city: "Gwenborough",
+//     zipcode: "92998-3874",
+//     geo: {
+//       lat: -37.3159,
+//       lng: 81.1496
+//     }
+//   },
+//   phone: 17707368031,
+//   website: "hildegard.org",
+//   company: {
+//     name: "Romaguera-Crona",
+//     catchPhrase: "Multi-layered client-server neural-net",
+//     bs: "harness real-time e-markets"
+//   }
+// }
+
+
+// video-4     mohirdev
+
+// let yosh:number = 25;
+// let long:number = 50;
+// let fullName:string = "Akramov Azizbek"
+
+// let digital:number[] = [1,2,3];
+// let anotherdigital: Array<number> = [1,2,3];
+
+// let people: { fullName:string, yosh:number} = {fullName:'Akramov Azizbek', yosh: 15}
+// console.log(people.yosh);
+
+
