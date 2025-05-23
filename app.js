@@ -217,7 +217,6 @@
 // }
 // const person = new People('azizbek', 15);
 // console.log(person.get());
-// Islom Ustoz, [5/22/2025 1:32 PM]
 // const idsi =document.getElementById('idsi')
 // const namesi =document.getElementById('namesi')
 // const agesi = document.getElementById('agesi')
@@ -300,13 +299,6 @@
 // 	console.log('Grades  ' + az.grades)
 // 	console.log('')
 // })
-// Islom Ustoz, [5/22/2025 1:33 PM]
-// Talabalar ro‘yxati yaratiladi
-// Har bir talaba bo‘yicha ma’lumotlar chiqariladi
-// 18 yoshdan kattalar ajratiladi
-// Faqat Active holatdagilar ajratiladi
-// Har bir talaba uchun o‘rtacha baho hisoblanadi
-// Qisqa StudentSummary[] tuziladi
 const arr = [
     42, 3, 60, 7, 19, 85, 25, 42, 64, 76,
     1, 99, 31, 17, 27, 33, 17, 49, 57, 4,
