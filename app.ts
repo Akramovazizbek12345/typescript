@@ -16,14 +16,12 @@
 // const ayrilganchegirma: Number = narx - chegirma
 // console.log(ayrilganchegirma)
 
-
 // video -3
 
 // function Azizbek(name:string,lastname:string):string {
 // 	return`${name} ${lastname}`
-	
-// }
 
+// }
 
 // const chekad =(age:number):boolean =>{
 // 	if (age >= 18) {
@@ -39,7 +37,6 @@
 
 // const add = chekad(20)
 // console.log(add);
-
 
 // video-4
 
@@ -59,7 +56,6 @@
 
 // const people1 = azizbek({firstName: people.firstName,lastname:people.lastName})
 // console.log(people1);
-
 
 // video-5
 
@@ -87,14 +83,12 @@
 // console.log(people[1]);
 // console.log(people[2]);     // xato
 
-
 // union type
 // let joylashuv: [number, string | number] = [98,'sdcefer']
 // console.log("1",joylashuv);
 
 // joylashuv = [12,55]
 // console.log(joylashuv);
-
 
 // function get():[string, number] {
 // 	return ['azizbek',15]
@@ -105,7 +99,6 @@
 // const [fullName, age] = log
 // console.log(fullName,age);
 
-
 // video-7
 
 // let severid: readonly number[] = [1,2,3,4,5]
@@ -113,7 +106,6 @@
 // severid.push(6)    // xato yuzaga keladi readonly ishlatganimiz uchun readonly qo'sholmimiz
 
 // console.log(severid);
-
 
 // let people: readonly [string,number] = ['azizbek',15]
 // people[0] = 'islom'  // xato yuzaga keladi readonly ishlatganimiz uchun readonly qo'sholmimiz
@@ -156,15 +148,11 @@
 // const dovn = get(Direction.Down)
 // console.log(dovn);
 
-
-
 // enum StatusPeople{
 // 	kam = 123,
 // 	ortacha = 250,
 // 	kop = 500,
 // }
-
-
 
 // function get(people : number) {
 // 	if (people === StatusPeople.kam) {
@@ -182,7 +170,7 @@
 
 // if (page === StatusPeople.ortacha) {
 // 	console.log("qotishi mumkin");
-	
+
 // }
 
 // video-9
@@ -233,7 +221,6 @@
 //   }
 // }
 
-
 // video-4     mohirdev
 
 // let yosh:number = 25;
@@ -246,7 +233,6 @@
 // let people: { fullName:string, yosh:number} = {fullName:'Akramov Azizbek', yosh: 15}
 // console.log(people.yosh);
 
-
 // video-5     mohirdev
 
 // function az(ab:number, cd:number) {
@@ -254,9 +240,7 @@
 // }
 
 // console.log(az(10,15));
-// console.log(az('azizbek',55)); // xato  chunki ab-string emas  
-
-
+// console.log(az('azizbek',55)); // xato  chunki ab-string emas
 
 // function az(fullName:string):string {
 // 	return `Hello ${fullName}`
@@ -264,13 +248,11 @@
 
 // console.log(az('Azizbek Akramovich'));
 
-
 // function az(fullName:string):void {
 // 	console.log(`Hello ${fullName}`);
 // }
 
 // console.log(az('Azizbek Akramovich'));
-
 
 // interface
 
@@ -286,10 +268,7 @@
 // 	kasb:"IT"
 // }
 
-
-
 // video-6     mohirdev
-
 
 // class People {
 //   firstname: string;
@@ -307,3 +286,131 @@
 
 // const person = new People('azizbek', 15);
 // console.log(person.get());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const idsi =document.getElementById('idsi')
+// const namesi =document.getElementById('namesi')
+// const agesi = document.getElementById('agesi')
+// const statusi =document.getElementById('statusi')
+// const gradesi = document.getElementById('gradesi')
+
+
+
+
+
+
+// enum StudentStatus {
+// 	Active = 'Active',
+// 	Graduated = 'Graduated',
+// 	Dropped = 'Dropped',
+// }
+
+// interface Student {
+// 	id: number
+// 	name: string
+// 	age: number
+// 	status: string
+// 	grades: Array<number>
+// }
+
+// const students: Student[] = [
+// 	{
+// 		id: 1,
+// 		name: 'Ali',
+// 		age: 20,
+// 		status: StudentStatus.Active,
+// 		grades: [80, 75, 90],
+// 	},
+// 	{
+// 		id: 2,
+// 		name: 'Laylo',
+// 		age: 17,
+// 		status: StudentStatus.Graduated,
+// 		grades: [88, 92, 95],
+// 	},
+// 	{
+// 		id: 3,
+// 		name: 'Diyor',
+// 		age: 22,
+// 		status: StudentStatus.Dropped,
+// 		grades: [60, 55, 70],
+// 	},
+// 	{
+// 		id: 4,
+// 		name: 'Malika',
+// 		age: 19,
+// 		status: StudentStatus.Active,
+// 		grades: [100, 95, 98],
+// 	},
+// ]
+
+
+
+// console.log('18 yoshdan kattalar')
+// students
+// 	.filter(az => az.age > 18)
+// 	.forEach(az => {
+// 		console.log(az.name)
+// 	})
+
+// console.log('')
+
+// console.log('activlar')
+// students
+// 	.filter(az => az.status === 'Active')
+// 	.forEach(az => {
+// 		console.log(az.name)
+// 	})
+
+// console.log('');
+// console.log('Ballar');
+
+// students.forEach(az => {
+// 	let kattason = Math.max(...az.grades)
+// 	let indexz = az.grades.indexOf(kattason)
+// 	let kichik = Math.min(...az.grades)
+// 	let indexzz = az.grades.indexOf(kichik)
+// 	delete az.grades[indexz]
+// 	delete az.grades[indexzz]
+//   let ochirish =  az.grades.filter(Boolean);
+// 	console.log(`${az.name} ${ochirish}` )
+  
+// })
+// console.log('');
+
+// console.log("StudentSummary")
+// students.forEach(az => {
+// 	console.log('id   ' + az.id)
+// 	console.log('name   ' + az.name)
+// 	console.log('Yosh   ' + az.age)
+// 	console.log('Status  ' + az.status)
+// 	console.log('Grades  ' + az.grades)
+// 	console.log('')
+// })
+
+
+
+
+
+
+
+
+
+

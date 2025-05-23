@@ -183,7 +183,7 @@
 // 	return ab + cd;
 // }
 // console.log(az(10,15));
-// console.log(az('azizbek',55)); // xato  chunki ab-string emas  
+// console.log(az('azizbek',55)); // xato  chunki ab-string emas
 // function az(fullName:string):string {
 // 	return `Hello ${fullName}`
 // }
@@ -217,3 +217,115 @@
 // }
 // const person = new People('azizbek', 15);
 // console.log(person.get());
+// Islom Ustoz, [5/22/2025 1:32 PM]
+// const idsi =document.getElementById('idsi')
+// const namesi =document.getElementById('namesi')
+// const agesi = document.getElementById('agesi')
+// const statusi =document.getElementById('statusi')
+// const gradesi = document.getElementById('gradesi')
+// enum StudentStatus {
+// 	Active = 'Active',
+// 	Graduated = 'Graduated',
+// 	Dropped = 'Dropped',
+// }
+// interface Student {
+// 	id: number
+// 	name: string
+// 	age: number
+// 	status: string
+// 	grades: Array<number>
+// }
+// const students: Student[] = [
+// 	{
+// 		id: 1,
+// 		name: 'Ali',
+// 		age: 20,
+// 		status: StudentStatus.Active,
+// 		grades: [80, 75, 90],
+// 	},
+// 	{
+// 		id: 2,
+// 		name: 'Laylo',
+// 		age: 17,
+// 		status: StudentStatus.Graduated,
+// 		grades: [88, 92, 95],
+// 	},
+// 	{
+// 		id: 3,
+// 		name: 'Diyor',
+// 		age: 22,
+// 		status: StudentStatus.Dropped,
+// 		grades: [60, 55, 70],
+// 	},
+// 	{
+// 		id: 4,
+// 		name: 'Malika',
+// 		age: 19,
+// 		status: StudentStatus.Active,
+// 		grades: [100, 95, 98],
+// 	},
+// ]
+// console.log('18 yoshdan kattalar')
+// students
+// 	.filter(az => az.age > 18)
+// 	.forEach(az => {
+// 		console.log(az.name)
+// 	})
+// console.log('')
+// console.log('activlar')
+// students
+// 	.filter(az => az.status === 'Active')
+// 	.forEach(az => {
+// 		console.log(az.name)
+// 	})
+// console.log('');
+// console.log('Ballar');
+// students.forEach(az => {
+// 	let kattason = Math.max(...az.grades)
+// 	let indexz = az.grades.indexOf(kattason)
+// 	let kichik = Math.min(...az.grades)
+// 	let indexzz = az.grades.indexOf(kichik)
+// 	delete az.grades[indexz]
+// 	delete az.grades[indexzz]
+//   let ochirish =  az.grades.filter(Boolean);
+// 	console.log(`${az.name} ${ochirish}` )
+// })
+// console.log('');
+// console.log("StudentSummary")
+// students.forEach(az => {
+// 	console.log('id   ' + az.id)
+// 	console.log('name   ' + az.name)
+// 	console.log('Yosh   ' + az.age)
+// 	console.log('Status  ' + az.status)
+// 	console.log('Grades  ' + az.grades)
+// 	console.log('')
+// })
+// Islom Ustoz, [5/22/2025 1:33 PM]
+// Talabalar ro‘yxati yaratiladi
+// Har bir talaba bo‘yicha ma’lumotlar chiqariladi
+// 18 yoshdan kattalar ajratiladi
+// Faqat Active holatdagilar ajratiladi
+// Har bir talaba uchun o‘rtacha baho hisoblanadi
+// Qisqa StudentSummary[] tuziladi
+const arr = [
+    42, 3, 60, 7, 19, 85, 25, 42, 64, 76,
+    1, 99, 31, 17, 27, 33, 17, 49, 57, 4,
+    2, 5, 8, 9, 10, 11, 12, 13, 14, 15,
+    16, 18, 20, 21, 22, 23, 24, 26, 28, 29,
+    30, 32, 34, 35, 36, 37, 38, 39, 40, 41,
+    43, 44, 45, 46, 47, 48, 50, 51, 52, 53,
+    54, 55, 56, 58, 59, 60, 61, 62, 63, 65,
+    66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
+    77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
+    87, 88, 89, 90, 91, 92, 93, 94, 95, 96
+].sort();
+const result = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr.indexOf(arr[i]) === i) {
+        result.push(arr[i]);
+    }
+}
+for (let b = 0; b < result.length; b++) {
+    const az = result[b];
+    console.log(az);
+}
