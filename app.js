@@ -367,10 +367,35 @@
 // console.log(aziz('fw'));
 // console.log(aziz(456985));
 // literal type
-let statuse;
-statuse = 'kam';
-statuse = 'o\'rtacha';
-let tanla;
-tanla = 'yo\'q';
-tanla = 'ha ';
+// let statuse: 'kam'|"o'rtacha" |"ko'p"
+// statuse = 'kam'
+// statuse ='o\'rtacha'
+// // statuse = 'frwerfr' xato chunki unaqa qiymat berilmagan
+// type javob = 'ha '|"yo'q" |"balki"
+// let tanla:javob
+// tanla ='yo\'q'
+// tanla ='ha '
 // tanla ='FHBDF' XATO CHUNKI FHBDF o'zgaruvchida berilmagan faqat berilganlardan foydalanamiz
+// type aliases
+// type Iydi = string|number
+// let foydalanuvchi:Iydi
+// foydalanuvchi = 244
+// foydalanuvchi ="fsf"
+// let boss:Iydi
+// boss =5
+// boss ='geer'
+// type Az ={
+//   name:string
+//   last:string
+//   age:number
+// }
+// type Za ={
+//   work:string
+// }
+// type qoshilgan =Az &Za
+// let ali:qoshilgan ={
+//   name:'azizbek',
+//   last:'akramov',
+//   age:85,
+//   work:'IT'
+// }
