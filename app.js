@@ -427,18 +427,22 @@
 // let st:string =az as string
 // console.log(st.toUpperCase());
 // never
-function az(xabar) {
-    throw new Error(xabar);
-}
-try {
-    let a = 10;
-    let b = 2;
-    let result = a / b;
-    if (b === 0) {
-        az("Nolga bo‘linish mumkin emas!");
-    }
-    console.log("natija:", result);
-}
-catch (error) {
-    console.log("Xatolik yuz berdi:", error.message);
-}
+// function az(xabar: string): never {
+//   throw new Error(xabar);
+// }
+// try {
+//   let a = 10;
+//   let b = 2;
+//   let result = a / b;
+//   if (b === 0) {
+//     az("Nolga bo‘linish mumkin emas!");
+//   }
+//   console.log("natija:", result);
+// } catch (error) {
+//   console.log("Xatolik yuz berdi:", (error as Error).message);
+// }
+// null
+let ism = null;
+console.log(`ism: ${ism}`);
+ism = 'azizbek';
+console.log(`ism ${ism}`);

@@ -592,20 +592,29 @@
 
 // never
 
-function az(xabar: string): never {
-  throw new Error(xabar);
-}
+// function az(xabar: string): never {
+//   throw new Error(xabar);
+// }
 
-try {
-  let a = 10;
-  let b = 2;
-  let result = a / b;
+// try {
+//   let a = 10;
+//   let b = 2;
+//   let result = a / b;
 
-  if (b === 0) {
-    az("Nolga bo‘linish mumkin emas!");
-  }
+//   if (b === 0) {
+//     az("Nolga bo‘linish mumkin emas!");
+//   }
 
-  console.log("natija:", result);
-} catch (error) {
-  console.log("Xatolik yuz berdi:", (error as Error).message);
-}
+//   console.log("natija:", result);
+// } catch (error) {
+//   console.log("Xatolik yuz berdi:", (error as Error).message);
+// }
+
+
+// null
+
+let ism:string|null =null
+console.log(`ism: ${ism}`) 
+
+ism ='azizbek'
+console.log(`ism ${ism}`);
