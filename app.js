@@ -357,13 +357,20 @@
 // }
 // aziz("ffdgdf")
 // aziz(125)
-function aziz(ali) {
-    if (typeof ali === 'string') {
-        return ali.toUpperCase();
-    }
-    else if (typeof ali === 'number') {
-        return ali.toFixed();
-    }
-}
-console.log(aziz('fw'));
-console.log(aziz(456985));
+// function aziz(ali:string|number) {
+//   if (typeof ali === 'string') {
+//     return ali.toUpperCase()
+//   }else if (typeof ali === 'number') {
+//     return ali.toFixed()
+//   }
+// }
+// console.log(aziz('fw'));
+// console.log(aziz(456985));
+// literal type
+let statuse;
+statuse = 'kam';
+statuse = 'o\'rtacha';
+let tanla;
+tanla = 'yo\'q';
+tanla = 'ha ';
+// tanla ='FHBDF' XATO CHUNKI FHBDF o'zgaruvchida berilmagan faqat berilganlardan foydalanamiz

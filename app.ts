@@ -487,14 +487,32 @@
 // aziz("ffdgdf")
 // aziz(125)
 
-function aziz(ali:string|number) {
-  if (typeof ali === 'string') {
-    return ali.toUpperCase()
-  }else if (typeof ali === 'number') {
-    return ali.toFixed()
-  }
-}
+// function aziz(ali:string|number) {
+//   if (typeof ali === 'string') {
+//     return ali.toUpperCase()
+//   }else if (typeof ali === 'number') {
+//     return ali.toFixed()
+//   }
+// }
 
 
-console.log(aziz('fw'));
-console.log(aziz(456985));
+// console.log(aziz('fw'));
+// console.log(aziz(456985));
+
+
+// literal type
+
+let statuse: 'kam'|"o'rtacha" |"ko'p"
+
+statuse = 'kam'
+statuse ='o\'rtacha'
+// statuse = 'frwerfr' xato chunki unaqa qiymat berilmagan
+
+
+type javob = 'ha '|"yo'q" |"balki"
+
+let tanla:javob
+
+tanla ='yo\'q'
+tanla ='ha '
+// tanla ='FHBDF' XATO CHUNKI FHBDF o'zgaruvchida berilmagan faqat berilganlardan foydalanamiz
