@@ -414,27 +414,87 @@
 
 
 
-const arr = [
-  42, 3, 60, 7, 19, 85, 25, 42, 64, 76,
-  1, 99, 31, 17, 27, 33, 17, 49, 57, 4,
-  2, 5, 8, 9, 10, 11, 12, 13, 14, 15,
-  16, 18, 20, 21, 22, 23, 24, 26, 28, 29,
-  30, 32, 34, 35, 36, 37, 38, 39, 40, 41,
-  43, 44, 45, 46, 47, 48, 50, 51, 52, 53,
-  54, 55, 56, 58, 59, 60, 61, 62, 63, 65,
-  66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
-  77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
-  87, 88, 89, 90, 91, 92, 93, 94, 95, 96
-].sort();
+// const arr = [
+//   42, 3, 60, 7, 19, 85, 25, 42, 64, 76,
+//   1, 99, 31, 17, 27, 33, 17, 49, 57, 4,
+//   2, 5, 8, 9, 10, 11, 12, 13, 14, 15,
+//   16, 18, 20, 21, 22, 23, 24, 26, 28, 29,
+//   30, 32, 34, 35, 36, 37, 38, 39, 40, 41,
+//   43, 44, 45, 46, 47, 48, 50, 51, 52, 53,
+//   54, 55, 56, 58, 59, 60, 61, 62, 63, 65,
+//   66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
+//   77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
+//   87, 88, 89, 90, 91, 92, 93, 94, 95, 96
+// ].sort();
 
-const result =[]
-for (let i = 0; i < arr.length; i++) {
-	if (arr.indexOf(arr[i]) === i) {
-		result.push(arr[i])
-	}
+// const result =[]
+// for (let i = 0; i < arr.length; i++) {
+// 	if (arr.indexOf(arr[i]) === i) {
+// 		result.push(arr[i])
+// 	}
+// }
+
+// for (let b = 0; b < result.length; b++) {
+// 	const az = result[b];
+// 	console.log(az);
+// }
+
+
+// try {
+//   let a = 10;
+//   let b = 0;
+//   let result = a / b;
+//   if (b===0) {
+//     throw new Error("nolga bo'linish mumkin emas!")
+//   }
+//   console.log("natija", result);
+// } catch (error) {
+//   console.log("xatolik yuz berdi:",(error as Error).message);
+// }
+
+
+// let statuscode:| 100 | 101 | 102 | 103
+//     | 200 | 201 | 202 | 203 | 204 | 205 | 206 | 207 | 208 | 226
+//     | 300 | 301 | 302 | 303 | 304 | 305 | 306 | 307 | 308
+//     | 400 | 401 | 402 | 403 | 404 | 405 | 406 | 407 | 408 | 409
+//     | 410 | 411 | 412 | 413 | 414 | 415 | 416 | 417 | 418 | 421
+//     | 422 | 423 | 424 | 425 | 426 | 428 | 429 | 431 | 451
+//     | 500 | 501 | 502 | 503 | 504 | 505 | 506 | 507 | 508 | 510 | 511;
+
+// function statuscod(aziz:number):void {
+//   if (aziz === statuscode) {
+//   console.log(aziz);
+// }else {
+// console.log('error');
+// }
+// }
+
+// statuscod(300)
+
+// union type
+
+// let aziz: string |number|boolean
+// aziz ="fafa"
+// aziz =155
+// aziz= true
+
+
+// function aziz(ali:string|number):void {
+//   console.log(`this name is ${ali}`);
+  
+// }
+
+// aziz("ffdgdf")
+// aziz(125)
+
+function aziz(ali:string|number) {
+  if (typeof ali === 'string') {
+    return ali.toUpperCase()
+  }else if (typeof ali === 'number') {
+    return ali.toFixed()
+  }
 }
 
-for (let b = 0; b < result.length; b++) {
-	const az = result[b];
-	console.log(az);
-}
+
+console.log(aziz('fw'));
+console.log(aziz(456985));
