@@ -442,7 +442,18 @@
 //   console.log("Xatolik yuz berdi:", (error as Error).message);
 // }
 // null
-let ism = null;
-console.log(`ism: ${ism}`);
-ism = 'azizbek';
-console.log(`ism ${ism}`);
+// let ism:string|null =null
+// console.log(`ism: ${ism}`) 
+// ism ='azizbek'
+// console.log(`ism ${ism}`);
+// / class
+class Car {
+    constructor(name, speed) {
+        this.name = name;
+        this.speed = speed;
+    }
+}
+let nexia = new Car('nexia 2', 200);
+console.log(nexia);
+let cobalt = new Car('cobalt', 250);
+console.log(cobalt);

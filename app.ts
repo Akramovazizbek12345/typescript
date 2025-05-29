@@ -613,8 +613,27 @@
 
 // null
 
-let ism:string|null =null
-console.log(`ism: ${ism}`) 
+// let ism:string|null =null
+// console.log(`ism: ${ism}`) 
 
-ism ='azizbek'
-console.log(`ism ${ism}`);
+// ism ='azizbek'
+// console.log(`ism ${ism}`);
+
+
+// / class
+
+class Car {
+    name:string;
+    speed:number;
+
+    constructor(name: string,speed:number){
+        this.name = name
+        this.speed = speed
+    }
+}
+
+let nexia = new Car('nexia 2',200)
+console.log(nexia);
+
+let cobalt = new Car('cobalt',250)
+console.log(cobalt);
