@@ -560,3 +560,12 @@
 //   name:'azizbek',
 //   age:15
 // }
+
+
+// void
+
+function az(ali:string):void {
+  console.log(ali);
+}
+
+az('hello world')

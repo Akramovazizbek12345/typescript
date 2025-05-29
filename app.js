@@ -408,3 +408,8 @@
 //   name:'azizbek',
 //   age:15
 // }
+// void
+function az(ali) {
+    console.log(ali);
+}
+az('hello world');
