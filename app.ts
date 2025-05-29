@@ -548,3 +548,15 @@
 //   age:85,
 //   work:'IT'
 // }
+
+// interface
+
+// interface Person{
+//   name:string
+//   age:number
+// }
+
+// let persons:Person={
+//   name:'azizbek',
+//   age:15
+// }
