@@ -622,18 +622,70 @@
 
 // / class
 
-class Car {
-    name:string;
-    speed:number;
+// class Car {
+//     name:string;
+//     speed:number;
 
-    constructor(name: string,speed:number){
-        this.name = name
-        this.speed = speed
+//     constructor(name: string,speed:number){
+//         this.name = name
+//         this.speed = speed
+//     }
+// }
+
+// let nexia = new Car('nexia 2',200)
+// console.log(nexia);
+
+// let cobalt = new Car('cobalt',250)
+// console.log(cobalt);
+
+// constructor
+
+
+// class Car {
+//     name:string;
+//     speed:number;
+//     istrue:boolean
+
+//     constructor(name: string ='Unknown',speed:number =0){
+//         this.name = name
+//         this.speed = speed
+//         this.istrue=true
+//     }
+// }
+
+// let nexia = new Car('nexia 2',200)
+// console.log(nexia);
+
+// let cobalt = new Car('cobalt',250)
+// console.log(cobalt);
+
+
+
+
+
+class Car {
+  name!: string;
+  year!: Date;
+
+  constructor(name: string, year: Date);
+  constructor(data: { name: string; year: Date });
+
+  constructor(nameOrData: string | { name: string; year: Date }, year?: Date) {
+    if (typeof nameOrData === 'string') {
+      this.name = nameOrData;
+      this.year = year!;
+    } else if (typeof nameOrData === 'object') {
+      this.name = nameOrData.name;
+      this.year = nameOrData.year;
     }
+  }
 }
 
-let nexia = new Car('nexia 2',200)
-console.log(nexia);
+const toyota = new Car('Toyota', new Date('2001-11-01'));
+console.log(toyota);
 
-let cobalt = new Car('cobalt',250)
-console.log(cobalt);
+const chevrolet = new Car({
+  name: 'Chevrolet',
+  year: new Date('2001-11-01'),
+});
+console.log(chevrolet);
