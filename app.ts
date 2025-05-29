@@ -564,8 +564,27 @@
 
 // void
 
-function az(ali:string):void {
-  console.log(ali);
-}
+// function az(ali:string):void {
+//   console.log(ali);
+// }
 
-az('hello world')
+// az('hello world')
+
+// unknown
+
+// function az(ali:unknown) {
+//   if (typeof ali === 'string') {
+//     return ali.toUpperCase()
+//   }if (typeof ali === 'number') {
+//     return ali + 5
+//   }
+// }
+// console.log(az('azizbek'));
+
+// console.log(az(10));
+
+
+
+let az:unknown ='hello'
+let st:string =az as string
+console.log(st.toUpperCase());

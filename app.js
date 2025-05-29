@@ -409,7 +409,20 @@
 //   age:15
 // }
 // void
-function az(ali) {
-    console.log(ali);
-}
-az('hello world');
+// function az(ali:string):void {
+//   console.log(ali);
+// }
+// az('hello world')
+// unknown
+// function az(ali:unknown) {
+//   if (typeof ali === 'string') {
+//     return ali.toUpperCase()
+//   }if (typeof ali === 'number') {
+//     return ali + 5
+//   }
+// }
+// console.log(az('azizbek'));
+// console.log(az(10));
+let az = 'hello';
+let st = az;
+console.log(st.toUpperCase());
