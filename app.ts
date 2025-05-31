@@ -769,19 +769,36 @@
 
 
 
-class Hayvon{
-  harakat(){
-    console.log("harakatlanyapti...");
-  }
-}
+// class Hayvon{
+//   harakat(){
+//     console.log("harakatlanyapti...");
+//   }
+// }
 
-class It extends Hayvon{
-  tovush(){
-    console.log("Vov!");
+// class It extends Hayvon{
+//   tovush(){
+//     console.log("Vov!");
     
+//   }
+// }
+
+// const it = new It()
+// it.harakat();
+// it.tovush();
+
+
+
+class Inson {
+  public ism:string;
+  private yosh:number;
+  protected millatt:string;
+
+  constructor(ism:string, yosh:number,millatt:string){
+    this.ism =ism
+    this.yosh=yosh
+    this.millatt = millatt
   }
 }
 
-const it = new It()
-it.harakat();
-it.tovush();
+const inson = new Inson("mirfozil",21,'ozb')
+console.log(inson.ism);
