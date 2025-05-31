@@ -804,14 +804,32 @@
 // console.log(inson.ism);
 
 
-class mat{
-  static PI =3.14;
+// class mat{
+//   static PI =3.14;
 
-  static Kvadrat (n:number):number{
-    return n*n
+//   static Kvadrat (n:number):number{
+//     return n*n
+//   }
+// }
+
+// console.log(mat.PI);
+// console.log(mat.Kvadrat(5));
+
+
+
+abstract class Hayvon{
+  abstract ovoz():void;
+  yur(){
+    console.log('Yur');
   }
 }
 
-console.log(mat.PI);
-console.log(mat.Kvadrat(5));
+class It extends Hayvon{
+  ovoz(): void {
+    console.log("vov!");
+  }
+}
 
+const it = new It()
+it.ovoz()
+it.yur()

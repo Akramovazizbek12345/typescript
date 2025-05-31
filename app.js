@@ -510,26 +510,81 @@
 // john.salary = 10;
 // const salary = john.salary;
 // console.log(salary);
-class Person {
-    constructor(name, age) {
-        this._age = 0;
-        this.name = name;
-        this.age = age;
-    }
-    introduce() {
-        console.log(`My name is ${this.name} I am years old ${this.age}`);
-    }
-    set salary(num) {
-        if (this._age < 0) {
-            console.log("0 dan katta bo'lishi kerak");
-        }
-        else {
-            console.log(this._age);
-        }
-    }
-    get salary() {
-        return this._age;
+// class Person{
+//   name:string
+//   age:number
+//   constructor(name:string,age:number){
+//     this.name = name
+//     this.age = age
+//   }
+//   introduce(){
+//     console.log(`My name is ${this.name} I am years old ${this.age}`);
+//   }
+//     _age: number = 0;
+//   set salary(num: number) {
+//     if (this._age <0) {
+//       console.log("0 dan katta bo'lishi kerak");
+//     }else{
+//       console.log(this._age);
+//     }
+//   }
+//   get salary(): number {
+//     return this._age;
+//   }
+// }
+// let odam = new Person('Azizbek',-1)
+// odam.introduce()
+// interface Hayvon{
+//   tovush():void;
+// }
+// class It implements Hayvon {
+//   tovush(): void {
+//     console.log("Vov-vov!");
+//   }
+// }
+// class Hayvon{
+//   harakat(){
+//     console.log("harakatlanyapti...");
+//   }
+// }
+// class It extends Hayvon{
+//   tovush(){
+//     console.log("Vov!");
+//   }
+// }
+// const it = new It()
+// it.harakat();
+// it.tovush();
+// class Inson {
+//   public ism:string;
+//   private yosh:number;
+//   protected millatt:string;
+//   constructor(ism:string, yosh:number,millatt:string){
+//     this.ism =ism
+//     this.yosh=yosh
+//     this.millatt = millatt
+//   }
+// }
+// const inson = new Inson("mirfozil",21,'ozb')
+// console.log(inson.ism);
+// class mat{
+//   static PI =3.14;
+//   static Kvadrat (n:number):number{
+//     return n*n
+//   }
+// }
+// console.log(mat.PI);
+// console.log(mat.Kvadrat(5));
+class Hayvon {
+    yur() {
+        console.log('Yur');
     }
 }
-let odam = new Person('Azizbek', -1);
-odam.introduce();
+class It extends Hayvon {
+    ovoz() {
+        console.log("vov!");
+    }
+}
+const it = new It();
+it.ovoz();
+it.yur();
