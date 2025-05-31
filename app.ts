@@ -817,19 +817,34 @@
 
 
 
-abstract class Hayvon{
-  abstract ovoz():void;
-  yur(){
-    console.log('Yur');
+// abstract class Hayvon{
+//   abstract ovoz():void;
+//   yur(){
+//     console.log('Yur');
+//   }
+// }
+
+// class It extends Hayvon{
+//   ovoz(): void {
+//     console.log("vov!");
+//   }
+// }
+
+// const it = new It()
+// it.ovoz()
+// it.yur()
+
+
+class Foydalanuvchi{
+  ism:string;
+
+  constructor(ism:string){
+    this.ism=ism
+  }
+  salom(){
+    console.log(`${this.ism}`);
   }
 }
 
-class It extends Hayvon{
-  ovoz(): void {
-    console.log("vov!");
-  }
-}
-
-const it = new It()
-it.ovoz()
-it.yur()
+const foydalanuvchi = new Foydalanuvchi('aziz')
+foydalanuvchi.salom()
