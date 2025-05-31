@@ -497,15 +497,39 @@
 // });
 // console.log(chevrolet);
 // getter va setter
-class Employee {
+// class Employee {
+//   ssalary: number;
+//   set salary(num: number) {
+//     this.ssalary = num * 100;
+//   }
+//   get salary(): number {
+//     return this.ssalary;
+//   }
+// }
+// const john = new Employee();
+// john.salary = 10;
+// const salary = john.salary;
+// console.log(salary);
+class Person {
+    constructor(name, age) {
+        this._age = 0;
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`My name is ${this.name} I am years old ${this.age}`);
+    }
     set salary(num) {
-        this.ssalary = num * 100;
+        if (this._age < 0) {
+            console.log("0 dan katta bo'lishi kerak");
+        }
+        else {
+            console.log(this._age);
+        }
     }
     get salary() {
-        return this.ssalary;
+        return this._age;
     }
 }
-const john = new Employee();
-john.salary = 10;
-const salary = john.salary;
-console.log(salary);
+let odam = new Person('Azizbek', -1);
+odam.introduce();

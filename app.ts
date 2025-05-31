@@ -693,20 +693,76 @@
 
 // getter va setter
 
-class Employee {
-  ssalary: number;
+// class Employee {
+//   ssalary: number;
 
-  set salary(num: number) {
-    this.ssalary = num * 100;
-  }
+//   set salary(num: number) {
+//     this.ssalary = num * 100;
+//   }
 
-  get salary(): number {
-    return this.ssalary;
-  }
+//   get salary(): number {
+//     return this.ssalary;
+//   }
+// }
+
+// const john = new Employee();
+// john.salary = 10;
+
+// const salary = john.salary;
+// console.log(salary);
+
+
+// class Person{
+//   name:string
+//   age:number
+//   constructor(name:string,age:number){
+//     this.name = name
+//     this.age = age
+//   }
+//   introduce(){
+//     console.log(`My name is ${this.name} I am years old ${this.age}`);
+//   }
+//     _age: number = 0;
+
+//   set salary(num: number) {
+//     if (this._age <0) {
+//       console.log("0 dan katta bo'lishi kerak");
+//     }else{
+//       console.log(this._age);
+//     }
+//   }
+
+//   get salary(): number {
+//     return this._age;
+//   }
+// }
+
+// let odam = new Person('Azizbek',-1)
+// odam.introduce()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+interface Hayvon{
+  tovush():void;
 }
 
-const john = new Employee();
-john.salary = 10;
-
-const salary = john.salary;
-console.log(salary);
+class It implements Hayvon {
+  tovush(): void {
+    console.log("Vov-vov!");
+  }
+}
