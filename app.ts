@@ -788,17 +788,30 @@
 
 
 
-class Inson {
-  public ism:string;
-  private yosh:number;
-  protected millatt:string;
+// class Inson {
+//   public ism:string;
+//   private yosh:number;
+//   protected millatt:string;
 
-  constructor(ism:string, yosh:number,millatt:string){
-    this.ism =ism
-    this.yosh=yosh
-    this.millatt = millatt
+//   constructor(ism:string, yosh:number,millatt:string){
+//     this.ism =ism
+//     this.yosh=yosh
+//     this.millatt = millatt
+//   }
+// }
+
+// const inson = new Inson("mirfozil",21,'ozb')
+// console.log(inson.ism);
+
+
+class mat{
+  static PI =3.14;
+
+  static Kvadrat (n:number):number{
+    return n*n
   }
 }
 
-const inson = new Inson("mirfozil",21,'ozb')
-console.log(inson.ism);
+console.log(mat.PI);
+console.log(mat.Kvadrat(5));
+
