@@ -757,12 +757,31 @@
 
 
 
-interface Hayvon{
-  tovush():void;
-}
+// interface Hayvon{
+//   tovush():void;
+// }
 
-class It implements Hayvon {
-  tovush(): void {
-    console.log("Vov-vov!");
+// class It implements Hayvon {
+//   tovush(): void {
+//     console.log("Vov-vov!");
+//   }
+// }
+
+
+
+class Hayvon{
+  harakat(){
+    console.log("harakatlanyapti...");
   }
 }
+
+class It extends Hayvon{
+  tovush(){
+    console.log("Vov!");
+    
+  }
+}
+
+const it = new It()
+it.harakat();
+it.tovush();
