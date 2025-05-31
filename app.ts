@@ -712,49 +712,6 @@
 // console.log(salary);
 
 
-// class Person{
-//   name:string
-//   age:number
-//   constructor(name:string,age:number){
-//     this.name = name
-//     this.age = age
-//   }
-//   introduce(){
-//     console.log(`My name is ${this.name} I am years old ${this.age}`);
-//   }
-//     _age: number = 0;
-
-//   set salary(num: number) {
-//     if (this._age <0) {
-//       console.log("0 dan katta bo'lishi kerak");
-//     }else{
-//       console.log(this._age);
-//     }
-//   }
-
-//   get salary(): number {
-//     return this._age;
-//   }
-// }
-
-// let odam = new Person('Azizbek',-1)
-// odam.introduce()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // interface Hayvon{
@@ -835,16 +792,79 @@
 // it.yur()
 
 
-class Foydalanuvchi{
-  ism:string;
+// class Foydalanuvchi{
+//   ism:string;
 
-  constructor(ism:string){
-    this.ism=ism
+//   constructor(ism:string){
+//     this.ism=ism
+//   }
+//   salom(){
+//     console.log(`${this.ism}`);
+//   }
+// }
+
+// const foydalanuvchi = new Foydalanuvchi('aziz')
+// foydalanuvchi.salom()
+
+
+class Person{
+  name:string
+  _age:number = 0;
+  constructor(name:string,age:number){
+    this.name = name
+    this._age = age
   }
-  salom(){
-    console.log(`${this.ism}`);
+  introduce():void{
+    console.log(`My name is ${this.name} I am years old ${this.age}`);
+  }
+  get age():number{
+    return this._age;
+  }
+  set age(value:number){
+    if (value <0) {
+      throw new Error("yosh 0 dan kichik bo'lmasligi kerak");
+    }
+    this.age =value;
+  }
+
+}
+
+const person = new Person('aziz',15)
+person.introduce()
+
+
+
+
+
+class Calculator{
+  add(a:number,b:number):number;
+  add(a:string,b:string):string
+  add(a:any,b:any):any{
+    return a + b
   }
 }
 
-const foydalanuvchi = new Foydalanuvchi('aziz')
-foydalanuvchi.salom()
+const calc = new Calculator();
+console.log(calc.add(5,10));
+console.log(calc.add('Salom','Azizbek'));
+
+
+
+interface Animal{
+  name:string;
+  makeSound():void;
+}
+
+class Dog implements Animal{
+  name: string;
+
+  constructor(name:string){
+    this.name=name
+  }
+  makeSound(): void {
+    console.log(`${this.name} Vov vov`);
+  }
+}
+
+const dog = new Dog('Bobik')
+dog.makeSound()
