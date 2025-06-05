@@ -877,6 +877,14 @@
 // const b = identity<number>(42);       // T bu yerda number
 
 
-function identity<T>(value: T): T {
-  return value;
-}
+// function identity<T>(value: T): T {
+//   return value;
+// }
+
+myPromise
+  .then(result => {
+    console.log("Natija:", result);
+  })
+  .catch(error => {
+    console.error("Xatolik:", error);
+  });
