@@ -869,9 +869,14 @@
 // const dog = new Dog('Bobik')
 // dog.makeSound()
 
-function identity<T>(arg: T): T {
-  return arg;
-}
+// function identity<T>(arg: T): T {
+//   return arg;
+// }
 
-const a = identity<string>("Salom");  // T bu yerda string
-const b = identity<number>(42);       // T bu yerda number
+// const a = identity<string>("Salom");  // T bu yerda string
+// const b = identity<number>(42);       // T bu yerda number
+
+
+function identity<T>(value: T): T {
+  return value;
+}
