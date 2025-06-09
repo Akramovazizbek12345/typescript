@@ -657,14 +657,25 @@
 // }
 // console.log(showLenght([1,2,3,3,3,1]));
 // console.log(showLenght('Azizbek'));
-class Product {
-    constructor(name, price) {
-        this.name = name;
-        this.price = price;
-    }
-    getInfo() {
-        console.log(`Maxshulot:${this.name}---${this.price}$`);
-    }
+// class Product{
+// 	name:string
+// 	price:number
+// 	constructor(name:string,price:number){
+// 		this.name=name
+// 		this.price=price
+// 	}
+// 	getInfo(){
+// 		console.log(`Maxshulot:${this.name}---${this.price}$`);
+// 	}
+// }
+// const p = new Product('cobalt',10000)
+// p.getInfo()
+const person = {
+    name: 'azizbek',
+    age: 15
+};
+function logProperty(obj, key) {
+    console.log(obj[key]);
 }
-const p = new Product('cobalt', 10000);
-p.getInfo();
+logProperty(person, 'name');
+logProperty(person, 'age');

@@ -912,19 +912,30 @@
 // console.log(showLenght([1,2,3,3,3,1]));
 // console.log(showLenght('Azizbek'));
 
-class Product{
-	name:string
-	price:number
+// class Product{
+// 	name:string
+// 	price:number
 
-	constructor(name:string,price:number){
-		this.name=name
-		this.price=price
-	}
+// 	constructor(name:string,price:number){
+// 		this.name=name
+// 		this.price=price
+// 	}
 
-	getInfo(){
-		console.log(`Maxshulot:${this.name}---${this.price}$`);
-	}
+// 	getInfo(){
+// 		console.log(`Maxshulot:${this.name}---${this.price}$`);
+// 	}
+// }
+
+// const p = new Product('cobalt',10000)
+// p.getInfo()
+const person={
+	name:'azizbek',
+	age:15
 }
 
-const p = new Product('cobalt',10000)
-p.getInfo()
+function logProperty<T,K extends keyof T>(obj:T,key:K):void{
+	console.log(obj[key]);
+}
+
+logProperty(person,'name')
+logProperty(person,'age')
