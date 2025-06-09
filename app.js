@@ -643,11 +643,17 @@
 // }
 // console.log( identity(typeof 'azizbek'));
 // console.log(identity(typeof 123));
-function fetchUserName() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve('azizbek');
-        }, 1000);
-    });
+// function fetchUserName():Promise<string> {
+//     return new Promise((resolve)=>{
+//         setTimeout(() => {
+//            resolve('azizbek') 
+//         },1000);
+//     })
+// }
+// fetchUserName().then(data =>
+//     console.log(data));
+function showLenght(item) {
+    return item.length;
 }
-fetchUserName().then(data => console.log(data));
+console.log(showLenght([1, 2, 3, 3, 3, 1]));
+console.log(showLenght('Azizbek'));
