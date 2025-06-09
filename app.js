@@ -643,8 +643,11 @@
 // }
 // console.log( identity(typeof 'azizbek'));
 // console.log(identity(typeof 123));
-function wrapInArray(value) {
-    return [value];
+function fetchUserName() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('azizbek');
+        }, 1000);
+    });
 }
-console.log(wrapInArray('azizbek'));
-console.log(wrapInArray(12345));
+fetchUserName().then(data => console.log(data));
