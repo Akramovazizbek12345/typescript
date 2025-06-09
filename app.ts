@@ -895,3 +895,9 @@
 // console.log( identity(typeof 'azizbek'));
 // console.log(identity(typeof 123));
 
+function wrapInArray<T>(value:T):[T] {
+	return [value]
+}
+console.log(wrapInArray('azizbek'));
+console.log(wrapInArray(12345));
+

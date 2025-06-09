@@ -643,3 +643,8 @@
 // }
 // console.log( identity(typeof 'azizbek'));
 // console.log(identity(typeof 123));
+function wrapInArray(value) {
+    return [value];
+}
+console.log(wrapInArray('azizbek'));
+console.log(wrapInArray(12345));
