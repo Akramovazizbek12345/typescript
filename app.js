@@ -576,42 +576,70 @@
 // }
 // const foydalanuvchi = new Foydalanuvchi('aziz')
 // foydalanuvchi.salom()
-class Person {
-    constructor(name, age) {
-        this._age = 0;
-        this.name = name;
-        this._age = age;
-    }
-    introduce() {
-        console.log(`My name is ${this.name} I am years old ${this.age}`);
-    }
-    get age() {
-        return this._age;
-    }
-    set age(value) {
-        if (value < 0) {
-            throw new Error("yosh 0 dan kichik bo'lmasligi kerak");
-        }
-        this.age = value;
-    }
-}
-const person = new Person('aziz', 15);
-person.introduce();
-class Calculator {
-    add(a, b) {
-        return a + b;
-    }
-}
-const calc = new Calculator();
-console.log(calc.add(5, 10));
-console.log(calc.add('Salom', 'Azizbek'));
-class Dog {
-    constructor(name) {
-        this.name = name;
-    }
-    makeSound() {
-        console.log(`${this.name} Vov vov`);
-    }
-}
-const dog = new Dog('Bobik');
-dog.makeSound();
+// class Person{
+//   name:string
+//   _age:number = 0;
+//   constructor(name:string,age:number){
+//     this.name = name
+//     this._age = age
+//   }
+//   introduce():void{
+//     console.log(`My name is ${this.name} I am years old ${this.age}`);
+//   }
+//   get age():number{
+//     return this._age;
+//   }
+//   set age(value:number){
+//     if (value <0) {
+//       throw new Error("yosh 0 dan kichik bo'lmasligi kerak");
+//     }
+//     this.age =value;
+//   }
+// }
+// const person = new Person('aziz',15)
+// person.introduce()
+// class Calculator{
+//   add(a:number,b:number):number;
+//   add(a:string,b:string):string
+//   add(a:any,b:any):any{
+//     return a + b
+//   }
+// }
+// const calc = new Calculator();
+// console.log(calc.add(5,10));
+// console.log(calc.add('Salom','Azizbek'));
+// interface Animal{
+//   name:string;
+//   makeSound():void;
+// }
+// class Dog implements Animal{
+//   name: string;
+//   constructor(name:string){
+//     this.name=name
+//   }
+//   makeSound(): void {
+//     console.log(`${this.name} Vov vov`);
+//   }
+// }
+// const dog = new Dog('Bobik')
+// dog.makeSound()
+// function identity<T>(arg: T): T {
+//   return arg;
+// }
+// const a = identity<string>("Salom");  // T bu yerda string
+// const b = identity<number>(42);       // T bu yerda number
+// function identity<T>(value: T): T {
+//   return value;
+// }
+// myPromise
+//   .then(result => {
+//     console.log("Natija:", result);
+//   })
+//   .catch(error => {
+//     console.error("Xatolik:", error);
+//   });
+// function identity<A>(value:A):A {
+// 	return value
+// }
+// console.log( identity(typeof 'azizbek'));
+// console.log(identity(typeof 123));

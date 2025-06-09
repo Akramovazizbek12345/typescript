@@ -881,10 +881,17 @@
 //   return value;
 // }
 
-myPromise
-  .then(result => {
-    console.log("Natija:", result);
-  })
-  .catch(error => {
-    console.error("Xatolik:", error);
-  });
+// myPromise
+//   .then(result => {
+//     console.log("Natija:", result);
+//   })
+//   .catch(error => {
+//     console.error("Xatolik:", error);
+//   });
+
+// function identity<A>(value:A):A {
+// 	return value
+// }
+// console.log( identity(typeof 'azizbek'));
+// console.log(identity(typeof 123));
+
