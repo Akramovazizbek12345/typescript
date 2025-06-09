@@ -905,10 +905,26 @@
 // fetchUserName().then(data =>
 //     console.log(data));
 
-function showLenght<T extends {length:number}>(item:T):number {
-	return item.length
+// function showLenght<T extends {length:number}>(item:T):number {
+// 	return item.length
+// }
+
+// console.log(showLenght([1,2,3,3,3,1]));
+// console.log(showLenght('Azizbek'));
+
+class Product{
+	name:string
+	price:number
+
+	constructor(name:string,price:number){
+		this.name=name
+		this.price=price
+	}
+
+	getInfo(){
+		console.log(`Maxshulot:${this.name}---${this.price}$`);
+	}
 }
 
-console.log(showLenght([1,2,3,3,3,1]));
-console.log(showLenght('Azizbek'));
-
+const p = new Product('cobalt',10000)
+p.getInfo()
